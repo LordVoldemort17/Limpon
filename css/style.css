@@ -54,10 +54,29 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
 }
-.btn_free {
-    color: #fff;
-    font-weight: 400;
+.btn-primary {
     background-color: #1085e4;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+.btn-secondary {
+    background-color: #7e8bae;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+.btn_free {
+    font-weight: 400;
+    padding: 20px 50px;
 }
 .grid h2 {
     font-size: 40px;
