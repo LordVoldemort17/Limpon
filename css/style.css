@@ -50,6 +50,7 @@ h1 {
     text-transform: uppercase;
     line-height: 97.2px;
     max-width: 600px;
+    margin-bottom: 30px;
 }
 .nav {
     font-style: 12px;
@@ -72,11 +73,66 @@ h1 {
     letter-spacing: 3px;
     margin-bottom: 50px;
 }
+.page_subscribe .title-h2 {
+    color: #fff;
+    margin: 0 0 25px;
+}
+.box-subscribe-user{
+    position: relative;
+}
+.box-subscribe-user input {
+    color: #fff;
+    border: 2px solid #3f5cb1;
+    border-radius: 42px;
+    background-color: transparent;
+    padding: 24px 215px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+} 
+.box-subscribe-child {
+    flex-basis: 44%;
+}
+.box-subscribe-user input::-webkit-input-placeholder {color: #b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color: #b1c3ee;}
+.box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
+
+.screen-img {
+    display: block;
+    background-image: url(../img/bgd_01.png);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 550px;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 250px;
+}
+.logo {
+    background-image: url(../img/logo.png);
+    display: block;
+    width: 180px;
+    height: 49px;
+}
 .nav > li {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .nav-item {
     color: #6e7ea9; 
+    letter-spacing: 1px;
 }
 .page_header_head {
     margin-bottom: 50px;
@@ -94,9 +150,10 @@ h1 {
     border-radius: 30px;
 }
 .btn-primary:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #1085e4;
-    font-weight: 900;
+    /* font-weight: 900; */
+    background-color: transparent;
 }
 .btn-secondary {
     background-color: #cbdbe8;
@@ -170,6 +227,37 @@ h1 {
     margin-bottom: 20px; 
     letter-spacing: 0;
 }
+.list-company {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.list-company-item {
+    display: block;
+    width: 200px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.company-one {
+    background-image: url(../img/token.png);
+    width: 198px;
+    height: 58px;
+}
+.company-two {
+    background-image: url(../img/magneto.png);
+    width: 200px;
+    height: 69px;
+}
+.company-three {
+    background-image: url(../img/boohoo.png);
+    width: 201px;
+    height: 47px;
+}
+.company-four {
+    background-image: url(../img/fractal.png);
+    width: 200px;
+    height: 69px;
+}
 .screen {
     margin-top: 70px;
 }
@@ -179,15 +267,57 @@ h1 {
 }
 .box_price_item {
     background-color: #f5faff;
+    flex-basis: 32%;
+    position: relative;
+    padding: 80px 0 85px 0;
+}
+.box_price_item ul {
+    padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.box_price_item ul>li {
+    margin-bottom: 14px;
+}
+.box_price_item h3 {
+    color: #000958;
+    font-size: 70px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.box_price_item h3 span{
+    font-size: 20px;
 }
 .box_price_item.active {
     background-color: #192b59;
     color: #fff;
 }
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-subscribe-text {
+    font-size: 14px;
+    max-width: 430px;
+}
 
 /* Page */
 .page_header {
-    margin-bottom: 150px;
+    background-image: url(../img/header-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 150px 0;
+    position: relative;
+}
+.page_company {
+    background-image: url(../img/page-company.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 100px;
 }
 .page_stat .page-screen{
     background-color: #edf6ff;
@@ -214,4 +344,9 @@ h1 {
 }
 .page_plan {
     text-align: center;
+}
+.page_subscribe {
+    padding: 25px 25px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,101,189,1) 40%, rgba(36,177,205,1) 87%);
 }
