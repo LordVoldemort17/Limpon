@@ -578,19 +578,22 @@ a.video-app {
     height: 50px;
     margin: 0 auto;
     transition: 0.3s;
-    border: none;
+    border: none;   
 }
 .box-team-item .btn-team:hover {
     background-color: #1a88e1;
 }
-.box-team-item .btn-more span{
+.box-team-item .btn-team span{
     background-image: url(../img/btn-team.png);
-    background-position: -8px -5px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
     display: block;
     margin: 0 auto;
+    align-self: center;
+}
+.box-team-item .btn-more span{
+    background-position: -8px -5px;
+    width: 20px;
+    height: 20px;
 }
 .box-team-item .btn-more:hover span{
     background-position: -8px -26px;
@@ -601,6 +604,38 @@ a.video-app {
 .social-team {
     display: flex;
     justify-content: space-between;
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -34px -23px;
+}
+.box-team-item .btn-fb span{
+    background-position: -34px -4px;
+    width: 20px;
+    height: 20px;
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -56px -23px;
+}
+.box-team-item .btn-tw span{
+    background-position: -56px -4px;
+    width: 20px;
+    height: 20px;
+}
+.box-team-item .btn-be:hover span {
+    background-position: -80px -23px;
+}
+.box-team-item .btn-be span{
+    background-position: -80px -4px;
+    width: 20px;
+    height: 20px;
+}
+.box-team-item .btn-web:hover span {
+    background-position: -104px -23px;
+}
+.box-team-item .btn-web span{
+    background-position: -104px -4px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Page */
