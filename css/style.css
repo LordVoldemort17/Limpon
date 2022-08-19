@@ -1,4 +1,4 @@
-/*Обнуление*/
+/* Обнуление*/
 *{
 	padding: 0;
 	margin: 0;
@@ -31,7 +31,7 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
+/*-------------------- */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -376,8 +376,6 @@ h1 {
     margin: 30px 0 25px;
 
 }
-.page_app-list {
-}
 .page_app-list>li>a {
     background-image: url(../img/apps.png);
     background-repeat: no-repeat;
@@ -547,7 +545,7 @@ a.video-app {
     position: relative;
     padding: 200px 0 30px 0;
 }
-.avatar {
+.box-team-item .avatar {
     position: absolute;
     top: -77px;
     left: 0;
@@ -572,18 +570,39 @@ a.video-app {
     text-align: center;
     margin-bottom: 25px;
 }
-.box-team-item .btn-more {
+.box-team-item .btn-team {
+    background-color: #f3f3f3;
+    border-radius: 100%;
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url(../img/plus.png);
-    background-repeat: no-repeat;
-    border-radius: 100%;
     margin: 0 auto;
+    transition: 0.3s;
+    border: none;
+}
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+.box-team-item .btn-more span{
+    background-image: url(../img/btn-team.png);
+    background-position: -8px -5px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.box-team-item .btn-more:hover span{
+    background-position: -8px -26px;
 }
 .box-team-item .btn-more:focus {
     outline: none;
 }
+.social-team {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Page */
 .page_header {
     background-image: url(../img/header-png.png);
