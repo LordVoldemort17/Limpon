@@ -543,7 +543,7 @@ a.video-app {
     flex-basis: 32%;
     box-shadow: 5px 8px 9px #f4f4f4;
     position: relative;
-    padding: 200px 0 30px 0;
+    padding: 200px 45px 35px 45px;
 }
 .box-team-item .avatar {
     position: absolute;
@@ -573,7 +573,7 @@ a.video-app {
 .box-team-item .btn-team {
     background-color: #f3f3f3;
     border-radius: 100%;
-    display: block;
+    display: flex;
     width: 50px;
     height: 50px;
     margin: 0 auto;
@@ -604,17 +604,18 @@ a.video-app {
 .social-team {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 .box-team-item .btn-fb:hover span {
-    background-position: -34px -23px;
+    background-position: -35px -26px;
 }
 .box-team-item .btn-fb span{
-    background-position: -34px -4px;
+    background-position: -34px -7px;
     width: 20px;
     height: 20px;
 }
 .box-team-item .btn-tw:hover span {
-    background-position: -56px -23px;
+    background-position: -56px -26px;
 }
 .box-team-item .btn-tw span{
     background-position: -56px -4px;
@@ -637,9 +638,82 @@ a.video-app {
     width: 20px;
     height: 20px;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form textarea{
+    resize: none;
+}
+.contact-form  input, .contact-form  textarea {
+    font-size: 14px;
+    line-height: 60px;
+    border: 2px solid #dce4ce;
+    padding: 1px 68px 0px 29px;
+    border-radius: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+    align-items: center;
+}
+.contact-form-item  {
+    margin-bottom: 15px;
+    position: relative;
+}
+.contact-form-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 50px;
+}
+.contact-form-name::after {
+    background-image: url(../img/icons/user.png);
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+.contact-form-mail::after {
+    background-image: url(../img/icons/mail.png);
+    width: 13px;
+    height: 12px;
+    top: calc(50% - 7px);
+}
+.contact-form-text::after {
+    background-image: url(../img/icons/message.png);
+    width: 14px;
+    height: 15px;
+    top: calc(50% - 45px);
+}
+.contact-form .btn-primary {
+    position: relative;
+    max-width: 232px;
+
+}
+.contact-form .btn-primary::before {
+    content: '';
+    background-image: url(../img/icons/plane.png);
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 13px;
+    height: 13px;
+    display: block;
+}
+
+.contact-form  input::-webkit-input-placeholder, .contact-form  textarea::-webkit-input-placeholder {color: #8995b3;}
+.contact-form  input::-moz-placeholder, .contact-form  textarea::-moz-placeholder {color: #8995b3;}
+.contact-form  input:-moz-placeholder, .contact-form  textarea:-moz-placeholder  {color: #8995b3;}
+.contact-form  input:-ms-input-placeholder, .contact-form  textarea:-ms-input-placeholder {color: #8995b3;}
+
+
 
 /* Page */
-.page_header {
+.page_header {textarea
     background-image: url(../img/header-png.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -732,4 +806,9 @@ a.video-app {
 .page_team .title-40 {
     margin-top: 44px;
     margin-bottom: 107px;
+}
+.page_form {
+    background-image: url(../img/bg_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
