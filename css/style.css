@@ -1,6 +1,7 @@
-/* Обнуление*/
+/* ÐžÐ±Ð½ÑƒÐ»ÐµÐ½Ð¸Ðµ */
 *{
 	padding: 0;
+	/* margin-top: 120px; */
 	margin: 0;
 	border: 0;
 }
@@ -44,17 +45,20 @@ body {
     margin: 0 auto;
 }
 h1 {
-    font-size: 60px;
+    font-size: 72px;
     font-weight: 600;
     color: #192b59;
-    text-transform: uppercase;
-    line-height: 97.2px;
-    max-width: 600px;
-    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+    /* text-transform: uppercase; */
+    line-height: 86.2px;
+    max-width: 598px;
+    margin-bottom: 62px;
 }
 .nav {
-    font-style: 12px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
+    /* line-height: 90px; */
+    letter-spacing: 5px;
     text-transform: uppercase;
     display: flex;
 }
@@ -129,17 +133,17 @@ h1 {
     display: block;
     background-image: url(../img/bgd_01.png);
     background-repeat: no-repeat;
-    width: 800px;
+    width: 797px;
     height: 550px;
     position: absolute;
-    right: 0;
-    top: 120px;
+    right: 0px;
+    top: 176px;
 }
 .box-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 250px;
+    margin-bottom: 304px;
 }
 .logo {
     background-image: url(../img/logo.png);
@@ -148,11 +152,23 @@ h1 {
     height: 49px;
 }
 .nav > li {
-    padding: 0 10px;
+    padding: 0px 11px;
+}
+a:first-child:hover {
+    border:0;
+}
+a:hover {
+    /* border-bottom: 3px solid #2aa9f6; */
+}
+.nav > li:hover {
+    border-bottom: 2px solid #05a8f4;
+}
+.nav > li:hover:last-child {
+    border-bottom: none;
 }
 .nav-item {
-    color: #6e7ea9; 
-    letter-spacing: 1px;
+    color: #6e7ea9;
+    /* letter-spacing: 1px; */
 }
 .page_header_head {
     margin-bottom: 50px;
@@ -165,7 +181,7 @@ h1 {
     font-size: 12px;
     letter-spacing: 1.2px;
     font-weight: 700;
-    padding: 20px 60px;
+    padding: 20px 49px;
     border: 1px solid #1085e4;
     border-radius: 30px;
     transition: 0.6s;
@@ -181,7 +197,7 @@ h1 {
     font-size: 12px;
     letter-spacing: 1.2px;
     font-weight: 700;
-    padding: 20px 30px;
+    padding: 20px 44px;
     border: 1px solid #7e8bae;
     border-radius: 30px;
     transition: 0.6s;
@@ -192,7 +208,7 @@ h1 {
 }
 .btn_free {
     font-weight: 400;
-    padding: 20px 50px;
+    padding: 20px 56px;
     transition: 0.6s;
 }
 .btn-group a + a {
@@ -212,11 +228,12 @@ h1 {
 }
 .grid {
     display: grid;
-    grid-template-areas: "a b c"
-                         "d b c"
-                         "d f g"
-                         "e f g"
-                         "e h h";
+    grid-template-areas:
+        "a b c"
+        "d b c"
+        "d f g"
+        "e f g"
+        "e h h";
     max-width: 1100px;
     margin: 0 auto;
     grid-gap: 35px;
@@ -271,7 +288,7 @@ h1 {
 }
 .grid_item {
     text-align: center;
-    box-shadow: 0 0 15px #f4f4f4;
+    box-shadow: 9px 9px 5px #f4f4f4;
 }
 .grid_item h3 {
     font-size: 20px;
@@ -329,14 +346,29 @@ h1 {
     width: 937px;
     height: 986px;
     left: -426px;
-    top: 0;
+    top: 62px;
+    z-index: -1;
 }
 .settings-icon {
-    display: block;
+    /* display: block; */
     background-image: url(../img/icon_01.png);
     width: 117px;
     height: 95px;
     background-repeat: no-repeat;
+    margin-top: -69px;
+}
+.swtting-icon p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #7581a1;
+}
+.settings-icon-title {
+    font-size: 56px;   
+    color: #192b59;    
+    font-weight: 600;    
+    letter-spacing: -2px;    
+    line-height: 52px;    
+    margin-bottom: 33px;
 }
 .page_software-list {
     margin-top: 50px;
@@ -352,14 +384,17 @@ h1 {
     margin-left: 0;
     margin-bottom: 50px;
 }
-.page_software .title-h2 .page_analytics.title-h2{
+.page_software .title-h2 .page_analytics .title-h2{
     max-width: 444px;
     line-height: 1.2;
     letter-spacing: -0.5px;
     margin-bottom: 16px;
 }
-.page_analytics.title-h2 {
+.settings-icon .title-h2 {
     max-width: 415px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
 }
 .page_software-flex {
     display: flex;
@@ -396,10 +431,12 @@ h1 {
 }
 .list-stat>li {
     font-size: 12px;
-    font-weight: 700;    
+    font-weight: 700;
     color: #1085e4;
+    letter-spacing: 1px;
+    line-height: 30px;
     text-align: center;
-    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 .list-stat>li>span {
     display: block;
@@ -490,7 +527,7 @@ h1 {
 }
 a.video-app {
     position: absolute;
-    top: -105px;
+    top: 29px;
     right: 173px;
 }
 .box_clietns {
@@ -713,7 +750,7 @@ a.video-app {
 
 
 /* Page */
-.page_header {textarea
+.page_header {
     background-image: url(../img/header-png.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -725,24 +762,40 @@ a.video-app {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 100px;
+    /* margin-bottom: 177px; */
+}
+.page_grid {
+    margin-top: 115px;
+    margin-bottom: 100px;
+}
+.page_stat {
+    background-color: #edf6ff;
+    padding: 60px 0 96px 0;
+}
+.page_stat .title-h2 {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #192b59;
+    text-align: center;
+}
+.page_stat .title-h2 span {
+    padding: 0;
 }
 .page_stat .page-screen{
     background-color: #edf6ff;
-}
-.page_stat {
-    padding: 116px 0 96px 0;
 }
 .page-screen {
     padding: 116px 0 0 0;
     text-align: center;
 }
-.page_stat .title-h2 .page-screen .title-h2{
+
+/* .page_stat .title-h2 .page-screen .title-h2 -- наследование здесь не работает{
     text-align: center;
     margin: 0 auto;
-}
-.page_stat .title-h2 {
-    max-width: 500px;
-}
+} */
 .page-screen .title-h2 {
     font-size: 40px;
 }
@@ -759,13 +812,14 @@ a.video-app {
 }
 .page_app {
     position: relative;
-    padding: 20px 0;
+    padding: 75px 0;
 }
 .page_analytics {
     background-image: url(../img/bg_02.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 120px 0;
 }
 .flex-analytics {
     display: flex;
