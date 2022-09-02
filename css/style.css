@@ -81,7 +81,10 @@ h1 {
     font-size: 40px;
     color: #192b59;
     font-weight: 600;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
+    line-height: 60px;
+    /* letter-spacing: -0.5px; */
+    margin-bottom: 23px;
 }
 .content-app .title-h2 {
     line-height: 40px;
@@ -94,7 +97,7 @@ h1 {
     text-transform: uppercase;
     color: #1085e4;
     letter-spacing: 3px;
-    margin-bottom: 50px;
+    margin-bottom: -2px;
 }
 .page_subscribe .title-h2 {
     color: #fff;
@@ -129,6 +132,9 @@ h1 {
 .box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
 .box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
 
+.plane-item {
+    color: #6bb7ff;
+}
 .screen-img {
     display: block;
     background-image: url(../img/bgd_01.png);
@@ -336,7 +342,7 @@ a:hover {
     height: 87px;
 }
 .page_software {
-    padding: 79px 0 7px 0;
+    padding: 145px 0 33px 0;
     position: relative;
 }
 .page_software-cover {
@@ -419,7 +425,7 @@ a:hover {
     height: 72px;
 }
 .page_app-list>li>a.page_app-android {
-    background-position: -6px 0px;
+    background-position: -8px 4px;
 }
 .page_app-list>li>a.page_app-ios {
     background-position: -357px 0;
@@ -507,6 +513,9 @@ a:hover {
 }
 .box_price_item h3 span{
     font-size: 20px;
+    font-size: 70px;
+    letter-spacing: -2px;
+    line-height: 40px;
 }
 .box_price_item.active {
     background-color: #192b59;
@@ -788,10 +797,51 @@ a.video-app {
     background-color: #edf6ff;
 }
 .page-screen {
-    padding: 116px 0 0 0;
+    padding: 95px 0 0 0;
     text-align: center;
+    background-color: #edf6ff;
 }
-
+.page_diagram {
+    background-image: url(../img/bg-diagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 117px 0;
+}
+.flex-diagram {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    /* flex-basis: 50%; */
+}
+.page_diagram-text {
+    /* width: 606px; */
+    /* height: 92px; */
+    font-size: 16px;
+    line-height: 26px;
+    color: #7581a1;
+    flex-basis: 50%;
+}
+.page_diagram-article {
+    margin-bottom: 54px;
+}
+.page_diagram-text > .title-h2 {
+    font-size: 50px;
+}
+.flex-diagram_img img{
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+}
+.btn-diagram {
+    /* margin-top: 48px; */
+    /* display: block; */
+    /* padding: 15px 21px; */
+    /* max-width: 210px; */
+    /* font-size: 12px; */
+    /* letter-spacing: 3px; */
+    /* line-height: 14px; */
+}
 /* .page_stat .title-h2 .page-screen .title-h2 -- наследование здесь не работает{
     text-align: center;
     margin: 0 auto;
@@ -804,6 +854,7 @@ a.video-app {
 }
 .page_plan {
     text-align: center;
+    padding-bottom: 80px;
 }
 .page_subscribe {
     padding: 25px 25px;
@@ -829,8 +880,7 @@ a.video-app {
 .flex-analytics>div {
     flex-basis: 50%;
 }
-.page_analytics-text {   
-}
+.page_analytics-text {margin-bottom: 40px;}
 .page_clients {
     background-image: url(../img/bg-client.png);
     background-repeat: no-repeat;
@@ -855,7 +905,7 @@ a.video-app {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 8px;
+    padding: 1px 0 45px 0;
 }
 .page_team .title-40 {
     margin-top: 44px;
@@ -865,4 +915,11 @@ a.video-app {
     background-image: url(../img/bg_02.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 17px 0;
+}
+footer {
+    background-color: #192b59;
+}
+footer > .wrap > p > a{
+    color: #fff;
 }
